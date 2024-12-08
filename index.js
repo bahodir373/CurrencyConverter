@@ -26,7 +26,7 @@ bot.setMyCommands([
 		description: 'Botni ishga tushirish',
 	},
 	{
-		command: '/convertor',
+		command: '/converter',
 		description: 'Konvertatsiya qilish',
 	},
 ])
@@ -43,11 +43,11 @@ bot.on('message', async msg => {
 
 		return bot.sendMessage(
 			chatId,
-			`Valyuta kursini hisoblash uchun /convertor buyrug'ini ishga tushiring.`
+			`Valyuta kursini hisoblash uchun /converter buyrug'ini ishga tushiring.`
 		)
 	}
 
-	if (text === '/convertor') {
+	if (text === '/converter') {
 		return bot.sendMessage(chatId, `Amalni tanlang:`, startOptions)
 	}
 })
